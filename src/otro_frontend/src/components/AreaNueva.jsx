@@ -9,12 +9,16 @@ const Alumnos = () => {
 
     const guardarArea = async (e) => {
         e.preventDefault();
-        var area = e.target[0].value;
+        var ph = e.target[0].value;
+        var humedad = e.target[1].value;
+        var nitrogeno = e.target[2].value;
+        var fosforo = e.target[3].value;
+        var potasio = e.target[4].value;
         console.log(area);
 
         setLoading("Loading...");
 
-        await areaICP.crearArea(area);
+        await areaICP.crearArea(ph, humedad, nitrogeno, fosforo, potasio);
         setLoading("");
 
         {
@@ -42,11 +46,11 @@ const Alumnos = () => {
                     <form class="form"  onSubmit={guardarArea}>
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre área</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Ph" />
-                        <input type="text" class="form-control" id="nombre" placeholder="Humedad" />
-                        <input type="text" class="form-control" id="nombre" placeholder="Nitrogeno" />
-                        <input type="text" class="form-control" id="nombre" placeholder="Fosforo" />
-                        <input type="text" class="form-control" id="nombre" placeholder="Potasio" />
+                        <input type="text" class="form-control" id="ph" placeholder="Ph" />
+                        <input type="text" class="form-control" id="humedad" placeholder="Humedad" />
+                        <input type="text" class="form-control" id="nitrogeno" placeholder="Nitrogeno" />
+                        <input type="text" class="form-control" id="fosforo" placeholder="Fosforo" />
+                        <input type="text" class="form-control" id="potasio" placeholder="Potasio" />
                     </div>
                 
                     <input type="submit" class="btn btn-success" value="Agregar"/>  

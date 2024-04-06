@@ -27,7 +27,7 @@ const Areas = () => {
         areas.forEach((area, index) => {
           // <p>{area[0]}-{area[1].nombre}</p>
           console.log("id area " + area[0]);
-          console.log("area" + area[1].nombre);
+          console.log("area" + area[1].ph);
         });   
         setLoading("");
 
@@ -85,7 +85,7 @@ const Areas = () => {
                 return (
                   <tr>
                       <td>{area[0]}</td>
-                      <td>{area[1].nombre}</td>
+                      <td>{area[1].ph}</td>
                       <td><button class="btn btn-primary btnEditarArea" data-id="{area[0]}">Editar</button></td>
                       <td>
                         <form onSubmit={eliminarArea} method="post">

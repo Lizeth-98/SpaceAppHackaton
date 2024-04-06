@@ -30,7 +30,12 @@ actor Areas {
 	};
 
 	public shared (msg) func crearArea(ph: Float, humedad: Float , nitrogeno: Float , fosforo: Float , potasio: Float) : async () {
-		let area = {nombre=nombre};
+		let area = {ph=ph;
+		humedad=humedad;
+		nitrogeno=nitrogeno;
+		fosforo=fosforo;
+		potasio=potasio;
+		};
 
 		listaAreas.put(Nat32.toText(generaAreaID()), area);
 		Debug.print("Nueva área creada ID: " # Nat32.toText(areaID));
