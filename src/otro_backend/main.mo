@@ -4,11 +4,15 @@ import Nat32 "mo:base/Nat32";
 import Text "mo:base/Text";
 import Principal "mo:base/Principal";
 import Debug "mo:base/Debug";
-import Int "mo:base/Int";
+import Float "mo:base/Float";
 
 actor Areas {
   type Area = {
-		nombre: Int;
+		ph: Float;
+		humedad: Float;
+		nitrogeno: Float;
+		fosforo: Float;
+		potasio: Float;
 	};
 
   type areaID = Nat32;
@@ -25,7 +29,7 @@ actor Areas {
 		return caller;
 	};
 
-	public shared (msg) func crearArea(nombre: Int) : async () {
+	public shared (msg) func crearArea(ph: Float, humedad: Float , nitrogeno: Float , fosforo: Float , potasio: Float) : async () {
 		let area = {nombre=nombre};
 
 		listaAreas.put(Nat32.toText(generaAreaID()), area);
@@ -46,7 +50,7 @@ actor Areas {
 		return area;
 	};
 
-	public shared (msg) func actualizarArea (id: Text, nombre: Int) : async Bool {
+	public shared (msg) func actualizarArea (id: Text, ph: Float, humedad: Float , nitrogeno: Float ,fosforo: Float , potasio: Float) : async Bool {
 		let area: ?Area = listaAreas.get(id);
 
 		switch (area) {

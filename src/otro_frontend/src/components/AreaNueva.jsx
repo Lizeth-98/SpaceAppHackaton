@@ -42,7 +42,11 @@ const Alumnos = () => {
                     <form class="form"  onSubmit={guardarArea}>
                     <div class="mb-3">
                         <label for="nombre" class="form-label">Nombre área</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Ingeniería Eléctrica" />
+                        <input type="text" class="form-control" id="nombre" placeholder="Ph" />
+                        <input type="text" class="form-control" id="nombre" placeholder="Humedad" />
+                        <input type="text" class="form-control" id="nombre" placeholder="Nitrogeno" />
+                        <input type="text" class="form-control" id="nombre" placeholder="Fosforo" />
+                        <input type="text" class="form-control" id="nombre" placeholder="Potasio" />
                     </div>
                 
                     <input type="submit" class="btn btn-success" value="Agregar"/>  
