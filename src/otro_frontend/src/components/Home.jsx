@@ -30,7 +30,7 @@ const Home = () => {
 
         const custom_style = {
             "color": "red",
-            "background-color": "blue",
+            "background-color": "green",
             "padding": "3px",
             "margin-left": "4px"
         }
@@ -50,7 +50,7 @@ const Home = () => {
     onElementAvailable(".connect-button", () => {
         const btn = Array.from(document.getElementsByClassName('connect-button'));
         const custom_style = {
-            "background-color": "blue",
+            "background-color": "green",
             "font-size": "17px",
         }
         Object.assign(btn[0].style, custom_style);
@@ -65,12 +65,12 @@ const Home = () => {
 
     return (
         <BrowserRouter>
-            <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+            <nav className="navbar navbar-expand-lg bg-success" data-bs-theme="dark">
 
                 {principal ? (
                     <div className="container-fluid">
 
-                        <Link to='/' className="navbar-brand">ICP Credentials</Link>
+                        <Link to='/' className="navbar-brand">Tech Titans</Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -81,7 +81,7 @@ const Home = () => {
                                 </li>
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Área
+                                        Datos
                                     </a>
                                     <ul className="dropdown-menu">
                                         <li><Link to='/area-nueva' className="dropdown-item" >Nuevo</Link></li>
@@ -90,22 +90,19 @@ const Home = () => {
                                 </li>
                                 <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Programas
+                                        Recomendación
                                     </a>
                                     <ul className="dropdown-menu">
                                         <li><Link to='/programas' className="dropdown-item" >Nuevo</Link></li>
                                         <li><Link to='/programas' className="dropdown-item" >Lista</Link></li>
                                     </ul>
                                 </li>
-                                <li className="nav-item dropdown">
+                                {/* <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Alumnos
+                                        Decision
                                     </a>
-                                    <ul className="dropdown-menu">
-                                        <li><Link to='/alumnos' className="dropdown-item" >Nuevo</Link></li>
-                                        <li><Link to='/alumnos' className="dropdown-item" >Lista</Link></li>
-                                    </ul>
-                                </li>
+                                    
+                                </li> */}
 
                             </ul>
 
@@ -119,7 +116,7 @@ const Home = () => {
                 )
                     : (
                         <div className="container-fluid">
-                            <a className="navbar-brand" href="#">ICP Credentials</a>
+                            <a className="navbar-brand" href="#">Tech Titans</a>
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon"></span>
                             </button>
