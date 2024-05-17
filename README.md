@@ -12,15 +12,9 @@ Optimización: Mejorar la calidad del suelo mediante técnicas innovadoras y efi
 
 Regeneración: Recuperar suelos degradados para devolverles su productividad y biodiversidad.
 
-If you want to start working on your project right away, you might want to try the following commands:
 
-```bash
-cd otro/
-dfx help
-dfx canister --help
-```
 
-## Running the project locally
+## Problematica
 
 If you want to test your project locally, you can use the following commands:
 
