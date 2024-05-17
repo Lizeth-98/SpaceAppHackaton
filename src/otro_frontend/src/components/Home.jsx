@@ -170,5 +170,3 @@ export default () => (
         <Home />
     </Connect2ICProvider>
 )
-
-

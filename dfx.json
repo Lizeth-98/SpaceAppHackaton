@@ -1,3 +1,4 @@
+
 {
   "canisters": {
     "otro_backend": {
@@ -32,9 +33,9 @@
     },
     "ic": {
       "providers": [
-        "https://mainnet.dfinity.network"
+        "https://ic0.app"
       ],
-      "type": "persistent"
+      "type": "ephemeral"
     }
   },
   "defaults": {
@@ -46,3 +47,4 @@
   "output_env_file": ".env",
   "version": 1
 }
+
