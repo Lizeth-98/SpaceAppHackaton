@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # BioTerra
 
 Nuestro proyecta se basa en un sistema de sensores que monitorea continuamente los niveles de nutrientes, la humedad del suelo y otros parámetros relevantes, proporcionando datos en tiempo real que permiten ajustes precisos en la aplicación de fertilizantes orgánicos. Esto no solo mejora la eficiencia en el uso de recursos, sino que también reduce la contaminación ambiental asociada con el uso excesivo de fertilizantes químicos. Haciendo uso de inteligencias artificiales para el análisis y determinación de acciones a realizar para el tratamiento del suelo.
@@ -25,20 +26,21 @@ Nuestras ganancias serían 3]
 - [Mantenimiento después de la garantía.]
 - [Venta de materia orgánica de la empresa aliada.]
 
+=======
+# TechTitans  BioTerra
+>>>>>>> c5ea65f7d8cd02f75e3973c777b7694246017084
 
-Welcome to your new otro project and to the internet computer development community. By default, creating a new project adds this README and some template files to your project directory. You can edit these template files to customize your project and to include your own code to speed up the development cycle.
+## Descripcion:
 
-To get started, you might want to explore the project directory structure and the default configuration file. Working with this project in your development environment will not affect any production deployment or identity tokens.
+Nuestro proyecta se basa en un sistema de sensores que monitorea continuamente los niveles de nutrientes, la humedad del suelo y otros parámetros relevantes, proporcionando datos en tiempo real que permiten ajustes precisos en la aplicación de fertilizantes orgánicos. Esto no solo mejora la eficiencia en el uso de recursos, sino que también reduce la contaminación ambiental asociada con el uso excesivo de fertilizantes químicos.
 
-To learn more before you start working with otro, see the following documentation available online:
+Nuestra Misión
 
-- [Quick Start](https://internetcomputer.org/docs/current/developer-docs/setup/deploy-locally)
-- [SDK Developer Tools](https://internetcomputer.org/docs/current/developer-docs/setup/install)
-- [Motoko Programming Language Guide](https://internetcomputer.org/docs/current/motoko/main/motoko)
-- [Motoko Language Quick Reference](https://internetcomputer.org/docs/current/motoko/main/language-manual)
+Mantención: Implementar prácticas sostenibles para preservar la salud del suelo actual.
 
-If you want to start working on your project right away, you might want to try the following commands:
+Optimización: Mejorar la calidad del suelo mediante técnicas innovadoras y eficaces.
 
+<<<<<<< HEAD
 ```bash
 cd BIO_TERRA/
 dfx help
@@ -46,40 +48,39 @@ dfx canister --help
 ```
 
 ##### Running the project locally
+=======
+Regeneración: Recuperar suelos degradados para devolverles su productividad y biodiversidad.
 
-If you want to test your project locally, you can use the following commands:
+>>>>>>> c5ea65f7d8cd02f75e3973c777b7694246017084
 
-```bash
-# Starts the replica, running in the background
-dfx start --background
 
-# Deploys your canisters to the replica and generates your candid interface
-dfx deploy
-```
+# Problematica
 
-Once the job completes, your application will be available at `http://localhost:4943?canisterId={asset_canister_id}`.
+En colombia existen 11 de los 12 suelos fértiles que existen y este abarca el 42,9% del territorio agricola, sin embargo 15% de este territorio está siendo sobre utilizado y un 13% subutilizado, lo que provoca en agravamiento del cambio climático, erosion del suelo, contaminación etc.
+Para 3 objetivos principales 
+Recuperación, preservación y/u optimización.
 
-If you have made changes to your backend canister, you can generate a new candid interface with
+# Implementacion ICP
 
-```bash
-npm run generate
-```
 
-at any time. This is recommended before starting the frontend development server, and will be run automatically any time you run `dfx deploy`.
+# Modelo de negocios.
 
-If you are making frontend changes, you can start a development server with
+El producto está enfocado al sector agricola, nos promocionaremos a través de la televisión ya que la gran parte de la población tiene una televisión en casa.
+El producto se venderá a un costo fijo, teniendo una garantía de 6 meses, dentro de esta garantía el mantenimiento es gratuito, pasando de esta garantía tendrá un costo. Así también con el resultado de la inteligencia con la recomendación el usuario tiene 2 opciones
 
-```bash
-npm start
-```
+• Fabricar su propia materia orgánica.
 
-Which will start a server at `http://localhost:8080`, proxying API requests to the replica at port 4943.
+• Comprar está materia orgánica con los requerimientos que le mando la recomendación a una empresa aliada a nosotros.
 
+
+<<<<<<< HEAD
 ###### Note on frontend environment variables
+=======
+Nuestras ganancias serían 3
+>>>>>>> c5ea65f7d8cd02f75e3973c777b7694246017084
 
-If you are hosting frontend code somewhere without using DFX, you may need to make one of the following adjustments to ensure your project does not fetch the root key in production:
+• Venta del producto.
 
-- set`DFX_NETWORK` to `ic` if you are using Webpack
-- use your own preferred method to replace `process.env.DFX_NETWORK` in the autogenerated declarations
-  - Setting `canisters -> {asset_canister_id} -> declarations -> env_override to a string` in `dfx.json` will replace `process.env.DFX_NETWORK` with the string in the autogenerated declarations
-- Write your own `createActor` constructor
+• Mantenimiento después de la garantía.
+
+• Venta de materia orgánica de la empresa aliada.
