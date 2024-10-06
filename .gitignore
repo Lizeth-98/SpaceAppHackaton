@@ -7,19 +7,20 @@
 .DS_Store
 **/.DS_Store
 
-# dfx temporary files
+# Dfx temporary files
 .dfx/
 
-# generated files
+# Generated files
 **/declarations/
 
-# rust
+# Rust
 target/
 
-# frontend code
+# Frontend code
 node_modules/
 dist/
 .svelte-kit/
 
-# environment variables
+# Environment Variables
 .env
+
