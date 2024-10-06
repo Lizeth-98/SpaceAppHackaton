@@ -69,15 +69,13 @@ const Areas = () => {
             }
             <div class="card">
               <div class="card-header">
-                Lista de áreas
+                Lista de datos
               </div>
               <div class="card-body">
                 <table class="table">
                   <thead>
                     <tr>
                       <th>ID Sensado</th>
-                      <th>PH</th>
-                      <th>Humedad</th>
                       <th>Nitrogeno</th>
                       <th>Fosforo</th>
                       <th>Potasio</th>
@@ -89,8 +87,6 @@ const Areas = () => {
                       return (
                         <tr>
                           <td>{area[0]}</td>
-                          <td>{area[1].ph}</td>
-                          <td>{area[1].humedad}</td>
                           <td>{area[1].nitrogeno}</td>
                           <td>{area[1].fosforo}</td>
                           <td>{area[1].potasio}</td>

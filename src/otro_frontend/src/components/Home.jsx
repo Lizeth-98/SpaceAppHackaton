@@ -70,7 +70,7 @@ const Home = () => {
                 {principal ? (
                     <div className="container-fluid">
 
-                        <Link to='/' className="navbar-brand">Tech Titans</Link>
+                        <Link to='/' className="navbar-brand">TechTitans</Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
@@ -88,15 +88,7 @@ const Home = () => {
                                         <li><Link to='/areas' className="dropdown-item" id="btnListaAreas">Lista</Link></li>
                                     </ul>
                                 </li>
-                                <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Recomendación
-                                    </a>
-                                    <ul className="dropdown-menu">
-                                        <li><Link to='/programas' className="dropdown-item" >Nuevo</Link></li>
-                                        <li><Link to='/programas' className="dropdown-item" >Lista</Link></li>
-                                    </ul>
-                                </li>
+                                <li className="nav-item"><Link to='/programas' className="nav-link btn btn-primary">Resultados</Link></li>
                                 {/* <li className="nav-item dropdown">
                                     <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Decision
@@ -116,7 +108,7 @@ const Home = () => {
                 )
                     : (
                         <div className="container-fluid">
-                            <a className="navbar-brand" href="#">Tech Titans</a>
+                            <a className="navbar-brand" href="#">TechTitans</a>
                             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon"></span>
                             </button>
