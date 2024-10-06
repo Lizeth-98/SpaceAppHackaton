@@ -1,6 +1,5 @@
 
-{
-  "canisters": {
+{  "canisters": {
     "otro_backend": {
       "main": "src/otro_backend/main.mo",
       "type": "motoko"
@@ -45,6 +44,5 @@
     }
   },
   "output_env_file": ".env",
-  "version": 1
-}
+  "version": 1}
 
