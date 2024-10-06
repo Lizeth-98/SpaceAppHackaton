@@ -17,7 +17,7 @@ To learn more before you start working with otro, see the following documentatio
 
 If you want to start working on your project right away, you might want to try the following commands:
 ```bash
-cd HackatonColombia/
+cd SpaceAppHackaton/
 npm install
 nvm install 20
 nvm use 20
